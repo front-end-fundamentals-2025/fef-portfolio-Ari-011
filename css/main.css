@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(32, 7, 58);
+  background-color: #F2F2F2;
   color: white;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .heading-written{
-
+  color: whitesmoke;
   margin: 20px;
 }
 
@@ -44,19 +44,115 @@ a{
 
 /*main*/
 
-.home-content{
-  display: flexbox;
-  align-items: center;
-  justify-content: space-between;
+.introduction-home{
+  display: flex;
+  margin-bottom: 20px ;
 }
 
-.home {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.home-greeting{
+  color: black;
+  margin-left: 100px;
 }
 
-.my-name-home {
+.my-name{
+  color: #a10e0e;
+  text-shadow:0 0 10px #a10e0e;
+  margin-left: 10px;
+}
+
+.home-phrase-wrap{
+
+  margin-top: 100px;
+  margin-left: 500px;
+  margin-bottom: 100px;
+  width: 500px;
+  height: 200px;
+  background: #a20f0f;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 10px #a10e0e;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+
+
+/*Home page images*/
+
+.images-homepage{
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  gap: 20px;
+  display: flex;
+  height: 400px;
+  overflow-x: scroll;
+
+}
+
+.moodboard{
+  width: 600px;
+}
+
+.zenpuku{
+  width: 800px;
+}
+
+.mockup-1{
+  width: 9000px;
+}
+
+.fashion-magazine-1{
+  width: 1000px;
+}
+
+.fashion-magazine-2{
+  width: 1000px;
+}
+
+.pixel-art{
+  width: 800px;
+}
+
+.pixel-game{
+  width: 800px;
+}
+
+.app-title{
+  color: black;
+  margin-left: 100px;
+  margin-bottom: 20px;
+
+
+}
+
+.app-images-homepage{
+  display: flex;
+  gap: 20px;
+  height: 400px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  overflow-x: scroll;
+}
+
+/*image placed on About me */
+.my-img {
+  width: 14%;
+  margin-top: -50px;
+  margin-left: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #a10e0e;
+  
+
+}
+
+.aboutme-paragraph{
+  margin: 20px 10px 350px 20px;
+  width: 600px;
+}
+
+.about-me {
+  color: black;
   margin-left: 100px;
   margin-top: 100px;
 }
@@ -64,31 +160,17 @@ a{
 .paragraph-background {
   margin-top: -300px;
   margin-right: 20px;
-  margin-bottom: 250px;
+  margin-bottom: 300px;
   margin-left: 100px;
   width: 650px;
   height: 150px;
-  background: rgb(32, 7, 58);
+  background: #a20f0f;
   border-radius: 20px;
   padding: 1px 0px 0px 0px;
-  box-shadow: 0 0 40px #a10e0e;
-}
-
-.home-paragraph{
-  margin: 20px 10px 350px 20px;
-  width: 600px;
-}
-
-/*image placed on About me */
-.my-img {
-  width: 16%;
-  margin-top: -100px;
-  margin-left: 1000px;
-  border-radius: 20px;
   box-shadow: 0 0 20px #a10e0e;
-  
 
 }
+
 
 /*Contact form*/
 
@@ -100,6 +182,7 @@ a{
 
   margin-top: 100px;
   margin-left: 600px;
+  margin-bottom: 120px ;
   position: relative;
   width: 400px;
   height: 400px;
@@ -147,9 +230,6 @@ a{
 }
 
 
-
-
-
 /*Footer*/
 
 .footer {
@@ -159,7 +239,6 @@ a{
 }
 
 .footer-written {
-  margin: 20px;
-
+margin-left: 20px;
 
 }
