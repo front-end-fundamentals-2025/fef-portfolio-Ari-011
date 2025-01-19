@@ -1,4 +1,4 @@
-/**/
+
 
 *{
   margin: 0;
@@ -79,6 +79,8 @@ a{
 
 
 /*Home page images*/
+
+/*<!-- The scrolling feature was adapted from https://www.youtube.com/shorts/W2yJ_IbkAyI?feature=share Accessed: 2025-01-17 -->*/
 
 .images-homepage{
   margin: 20px;
@@ -179,6 +181,8 @@ a{
 .contact-title {
   text-align: center;
 }
+
+/*<!-- The following lines of code for the contact form were based from https://youtu.be/EzXdxvO1htA Accessed: 2025-01-17 -->*/
 
 .wrapper {
 
