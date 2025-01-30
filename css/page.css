@@ -1,0 +1,563 @@
+/*The following code was inspired by https://developer.mozilla.org/es/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout Accessed: 2025-01-26  */
+/*The scrolling feature was adapted from https://www.youtube.com/shorts/W2yJ_IbkAyI?feature=share Accessed: 2025-01-17 -->*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Header*/
+
+header{
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+  background-color: #333;
+  border-bottom: 2px solid black;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#logo {
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+a{
+  color: white;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #007acc;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+
+body {
+  
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Main Container*/
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.10fr 0.10fr 0.23fr 0.10fr;
+  gap: 20px;
+  margin: 10px;
+  padding: 0;
+  border: 0;
+
+}
+
+
+/*Title*/
+
+.title{
+  grid-column:1 / 3;
+  grid-row: 2;
+  padding: 10px;
+  text-align: center;
+}
+
+
+/*Text*/
+
+.text{
+  grid-column: 1 / 2;
+  grid-row: 3;
+  padding: 20px;
+}
+
+/*Images*/
+
+.pageun{
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  overflow-x: scroll;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+  
+}
+
+
+.game-1{
+  width: 60%;
+}
+
+.gview{
+  width: 83%;
+}
+
+.start{
+  width: 83%;
+}
+
+
+.page-deus{
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width:450px;
+  height: 200px;
+  overflow-x: scroll;
+  margin-right: 20px;
+  
+}
+
+.pageone{
+  width: 140%;
+}
+
+.models{
+  width: 140%;
+}
+
+.page-trois{
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 480px;;
+  height: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.mockup{
+  border-radius: 10px;
+  width: 50%;
+}
+
+.moodboard{
+  border-radius: 10px;
+  width: 50%;
+}
+
+
+.page-four{
+  grid-column: 2;
+  grid-row: 3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:500px;
+  height: 400px;
+  overflow-x: scroll;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.app-main{
+  width: 100%;
+}
+
+.login{
+  width: 100%;
+}
+
+.home-m{
+  width: 100%;
+}
+
+.burger{
+  width: 100%;
+}
+
+.favourites{
+  width: 100%;
+}
+
+.details{
+  width: 100%;
+}
+
+.soups{
+  width: 100%;
+}
+
+.salads{
+  width: 100%;
+}
+
+.myorder{
+  width: 100%;
+}
+
+.payment{
+  width: 100%;
+}
+
+.tracking{
+  width: 100%;
+}
+
+.menu{
+  width: 100%;
+}
+
+.about{
+  width: 100%;
+}
+
+.profile{
+  width: 100%;
+}
+
+.language{
+  width: 100%;
+}
+
+.help{
+  width: 100%;
+}
+
+.drawing{
+  grid-column: 2;
+  grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:auto;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.fox{
+  border-radius: 10px;
+  width: 60%;
+}
+
+/* Footer */
+footer {
+  grid-column: 1 / 3;
+  grid-row: 4;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 800px){ /*for a less than 768px screen*/
+  header{
+    display: flex;
+    padding-left: 5%;
+    align-items: center;
+    background-color: #333;
+    border-bottom: 2px solid black;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  #logo {
+    color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 5px;
+  }
+  
+  ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-left: 2rem;
+  }
+  
+  a{
+    color: white;
+  }
+  
+  /* Navigation styling */
+  nav ul {
+    list-style: none;
+    gap: 5px;
+    padding: 0;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav a:hover {
+    color: #007acc;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  
+  
+  body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Main Container*/
+  
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.10fr 0.10fr 0.23fr 0.10fr 0.10fr;
+    gap: 20px;
+    margin: 10px;
+    padding: 0;
+    border: 0;
+  
+  }
+
+    /*Text*/
+
+  .text{
+    grid-column: auto;
+    padding: 20px;
+  }
+
+  .pageun{
+    grid-column: 1;
+    grid-row: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    overflow-y: scroll;
+    margin: 10px;
+    gap: 10px;
+    
+  }
+
+  .game-1{
+    width: 100%;
+  }
+  
+  .gview{
+    width: 100%;
+  }
+  
+  .start{
+    width: 100%;
+  }
+
+  .page-deus{
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 200px;
+    overflow-y: scroll ;
+    overflow-x: hidden;
+    margin:10px;
+    
+  }
+
+  .pageone{
+    width: 100%;
+  }
+  
+  .models{
+    width: 100%;
+  }
+
+  .page-trois{
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:auto;
+    height: 200px;
+    overflow-x: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  
+  .mockup{
+    width: 50%;
+  }
+  
+  .moodboard{
+    width: 50%;
+  }
+
+
+  .page-four{
+    grid-column: 1;
+    grid-row: 4;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:400px;
+    height: 400px;
+    overflow-x: scroll;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  
+  .app-main{
+    width: 100%;
+  }
+  
+  .login{
+    width: 100%;
+  }
+  
+  .home-m{
+    width: 100%;
+  }
+  
+  .burger{
+    width: 100%;
+  }
+  
+  .favourites{
+    width: 100%;
+  }
+  
+  .details{
+    width: 100%;
+  }
+  
+  .soups{
+    width: 100%;
+  }
+  
+  .salads{
+    width: 100%;
+  }
+  
+  .myorder{
+    width: 100%;
+  }
+  
+  .payment{
+    width: 100%;
+  }
+  
+  .tracking{
+    width: 100%;
+  }
+  
+  .menu{
+    width: 100%;
+  }
+  
+  .about{
+    width: 100%;
+  }
+  
+  .profile{
+    width: 100%;
+  }
+  
+  .language{
+    width: 100%;
+  }
+  
+  .help{
+    width: 100%;
+  }
+
+
+  .drawing{
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:auto;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  
+  .fox{
+    border-radius: 10px;
+    width: 60%;
+  }
+  
+
+  /* Footer */
+  footer {
+    grid-column: auto;
+    grid-row: 5;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+}
