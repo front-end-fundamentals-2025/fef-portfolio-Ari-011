@@ -3,37 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact page</title>
-  <link rel="stylesheet" href="./css/main.css">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./contact.css">
 </head>
+
 <body>
-  
-  <header class="heading-spacing">
-  
-    <h1 class="heading-written">Ari</h1>
-  
+
+  <header>
+    <p id="logo">ARI</p>
     <nav>
       <ul>
-  
         <a href="index.html">
           <li>Home</li>
         </a>
-  
-        <a href="aboutme.html">
-          <li>About me</li>
+        <a href="projects.html">
+          <li>Projects</li>
         </a>
-  
         <a href="contact.html">
           <li>Contact</li>
         </a>
-  
       </ul>
     </nav>
   </header>
 
+
+  <img src="./img/building.jpeg" alt="building">
+
   <main>
 
-    
+    <!-- The following lines of code for the contact form were based from https://youtu.be/2O8pkybH6po Accessed: 2025-01-17 -->
 
     <form class="wrapper">
       <h1 class="contact-title">Contact me</h1>
@@ -48,25 +46,19 @@
       <input type="email" placeholder="name@gmail.com" required>
     
 
-      <label for="message"> Message:</label>
-      <input type="text" placeholder="Write here" required>
+      <label for="message">Message:</label>
+      <textarea class="message" name="message" placeholder="Write here"> </textarea>
     
     </section>
-
-      
-      <input type="submit" class="submit-button">
-
     
+    <input type="submit" class="submit-button">
 
     </form>
-
   </main>
 
-  <footer class="footer">
-    <p class="footer-written">
-      © 2025 | Ariadna Nicol Alfonso Villamarin |
-    </p>
-  </footer> 
-
+  <footer>
+    © 2025 | Ariadna Nicol Alfonso Villamarin |
+  </footer>
+  
 </body>
 </html>
