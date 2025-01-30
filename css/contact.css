@@ -1,0 +1,186 @@
+*{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+}
+
+/*Header*/
+
+header{
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+  background-color: #333;
+  border-bottom: 2px solid black;
+  grid-column: 1 / 3;
+  grid-row: 1;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#logo {
+  color: white;
+  font-weight: 800;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+a{
+  color: white;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #007acc;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.10fr 1fr 0.10fr;
+  gap: 20px; 
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Image on the left column */
+
+img {
+  grid-column: 1 / 2; 
+  grid-row: 2;
+  max-width: 90%;
+
+}
+
+
+
+/* Form wrapper */
+.wrapper {
+  margin: 20px;
+  grid-column: 2 / 3; 
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Form title ("CONTACT ME") */
+
+.contact-title {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* Style of the form */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: bold;
+}
+
+
+.form-group input, textarea {
+  padding: 10px;
+  border: 1px solid #ccccccd7;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/*text area only*/
+
+textarea {
+  resize: none; /*defined px for the text area*/
+  height: 100px;
+}
+
+/* BUTTON */
+
+.submit-button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #107cbf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /*change the mouse style to a hand for click*/
+}
+
+.submit-button:hover {
+  background-color: #359cdd;
+}
+
+/* Footer */
+footer {
+  grid-column: 1 / 3;
+  grid-row: 6;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px){
+
+  body {
+    
+    display: grid;
+    grid-template-columns: 1fr ; 
+    grid-template-rows: auto;
+    gap: 20px; 
+    padding: 20px;
+    text-decoration: none;
+    
+  }
+
+  header{
+    grid-column: auto;
+  }
+
+  img{
+    grid-column: auto;
+    width: 0px;
+    grid-row: 3;
+  }
+
+  .wrapper{
+    grid-column: auto;
+  }
+  footer{
+    grid-column: auto;
+  }
+
+}
