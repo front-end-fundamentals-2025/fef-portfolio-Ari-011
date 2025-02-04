@@ -99,6 +99,29 @@ img {
   margin: 0;
   font-size: 28px;
   text-align: center;
+  animation-name: contact-rotate;
+  animation-duration: 10s;
+}
+
+@keyframes contact-rotate{
+  0%{
+    scale: 0.5;
+    transform: rotate(0);
+  }
+
+  50%{
+    scale: 0.7;
+    transform: rotate(45deg);
+  }
+
+  80%{
+    scale: 0.8;
+    transform: rotate(-45deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
 }
 
 /* Style of the form */
