@@ -100,7 +100,7 @@ img {
   font-size: 28px;
   text-align: center;
   animation-name: contact-rotate;
-  animation-duration: 10s;
+  animation-duration: 5s;
 }
 
 @keyframes contact-rotate{
